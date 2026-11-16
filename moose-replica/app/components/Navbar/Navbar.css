@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    padding: 3.5vw 15vw 0 15vw;
+    width: 100vw;
+    z-index: 99;
+    background: transparent;
+    color: black;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.navbar-links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3vw;
+    background-color: rgb(245, 245, 245);
+    border-radius: 15vw;
+}
+
+.navbar-icon{
+    width: 15vw;
+}
+
+.navbar-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2vw;
+}
+.navbar-dot{
+    opacity: 0;
+}
+.navbar-link-text{
+    font-size: 1.2vw;
+    color: rgb(6, 20, 12);
+}
+
+.navbar-download-button{
+    display: flex;
+    font-size: 1.2vw;
+    background-color: black;
+    color: rgb(0, 215, 118);
+    border-radius: 15vw;
+    width: 17.5vw;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+}

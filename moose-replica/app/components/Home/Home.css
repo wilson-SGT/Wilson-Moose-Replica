@@ -1,0 +1,124 @@
+.section{
+    color: black;
+}
+.content-container {
+    width: 100%;
+    padding: 0 15vw;
+    box-sizing: border-box;
+}
+.center-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 7.5vw;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: min(10vh, 5vw);
+    gap: 30vw;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+.left-text{
+    font-size: 3.5vw;
+    line-height: 1.25;
+}
+.left-highlight{
+    display: flex;
+    align-items: center;
+    color: #777;
+    gap: 1.5vw;
+}
+.left-line{
+    display: flex;
+    background-color: #777;
+    height: .150vh;
+    width: 3.5vw;
+}
+
+.left-download-button{
+    background-color: #F5F5F5;
+    border-radius: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 4vw;
+    width: 17.5vw;
+}
+.download-now-text {
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin-right: 1.5vw;
+}
+.left-arrow-container{
+    width: 4vw;
+    height: 4vw;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-arrow-icon{
+    width: 1.4vw;
+}
+
+.image-container{
+    position: absolute;
+    height: min(70vh, 40vw);
+    width: min(70vh, 40vw);
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+    right: unset;
+}
+.image-phone{
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
+
+.right-text{
+    display: flex;
+    position: relative;
+    font-size: 1.5vw;
+    line-height: 1.25;
+    top: 1vw;
+}
+
+.green-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    min-height: 40vw;
+}
+.green-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.green-container .text-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 0;
+    margin: 0;
+}
+.slide-animation{
+
+}
+

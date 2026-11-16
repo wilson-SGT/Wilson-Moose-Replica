@@ -1,0 +1,33 @@
+.intro-splash-screen-container {
+    background-color: #00d776;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.intro-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-logo {
+    width: 10vw;
+    opacity: 0;
+ }
+
+.intro-text {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    padding-left: 1vw;
+    height: 3vw;
+}
+
+.text {
+    opacity: 0;
+}
