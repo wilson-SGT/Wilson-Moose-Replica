@@ -19,7 +19,7 @@
     flex-direction: row;
     position: relative;
     margin-top: min(10vh, 5vw);
-    gap: min(48.711vh, 27.4vw);
+    gap: min(48.711vh, 32vw);
     justify-content: center;
 }
 .left-container{
@@ -28,7 +28,7 @@
     gap: 5vw;
 }
 .left-text{
-    font-size: min(6.172vh, 3.472vw);
+    font-size: min(6.172vh, 3.2vw);
     line-height: 1.25;
 }
 .left-highlight{
