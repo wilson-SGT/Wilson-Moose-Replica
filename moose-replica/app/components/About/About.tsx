@@ -31,7 +31,7 @@ export default function About() {
                         <div className="sub-text">
                             <div className="line-left"/>
                             <span className="middle-sub-text">Feel at ease with a social space you can trust</span>
-                            <div className="line-right"/>
+                            <div className="line-right2"/>
                         </div>
                         <div className="middle-download">
                             <div className="middle-download-button">
