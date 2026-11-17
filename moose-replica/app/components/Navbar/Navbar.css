@@ -23,7 +23,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-inline: min(5.333vh, 3vw);
+    margin-inline: 3vw;
     gap: 3vw;
 }
 
@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-inline: min(5.333vh, 7vw);
+    margin-inline: 4.2vw;
     height: 3vw;
     background-color: rgb(245, 245, 245);
     border-radius: 15vw;
