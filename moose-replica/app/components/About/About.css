@@ -1,0 +1,134 @@
+.section-2{
+    position: relative;
+    color: black;
+    min-height: 65vh;
+}
+.content-container2 {
+    width: 100%;
+    padding: 6.8vw 15.156vw 0 15.156vw;
+    box-sizing: border-box;
+}
+.inner-container{
+    position: absolute;
+    width: 69.5vw;
+    height: 44.15vw;
+}
+
+.bubble-1{
+    position: absolute;
+    background-color: #ddf657;
+    width: 14vw;
+    height: 6.8vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-bubble-1{
+    width: 5.1vw;
+}
+.bubble-2{
+    position: absolute;
+    top: 6.8vw;
+    right: 0;
+    background-color: #8ff657;
+    width: 14vw;
+    height: 6.8vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-bubble-2{
+    width: 5.1vw;
+}
+.bubble-3{
+    position: absolute;
+    bottom: 9.2vw;
+    right: 0;
+    background-color: #57a1f6;
+    width: 14vw;
+    height: 6.8vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-bubble-3{
+    width: 5.1vw;
+}
+.bubble-4{
+    position: absolute;
+    bottom: 0;
+    background-color: #f6be57;
+    width: 14vw;
+    height: 6.8vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-bubble-4{
+    width: 5.1vw;
+}
+
+.text-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.7vw;
+}
+
+.title-text{
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-align: center;
+    line-height: 4.4vw;
+}
+.sub-text{
+    padding-top: 5.5vw;
+    font-size: 1.4vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+.line-left{
+    background: linear-gradient(-90deg, #289600, transparent 90%);
+    width: 3.5vw;
+    height: 0.225vw;
+}
+.line-right{
+    background: linear-gradient(90deg, #289600, transparent 90%);
+    width: 3.5vw;
+    height: 0.225vw;
+}
+
+.middle-download-button{
+    margin-top: 3.1vw;
+    background-color: #00D776;
+    border-radius: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 4vw;
+    width: 17.8vw;
+}
+.download-now-text-2 {
+    font-weight: 500;
+    font-size: 1.4vw;
+    margin-right: 1.5vw;
+}
+.middle-arrow-container{
+    width: 4vw;
+    height: 4vw;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-arrow-icon{
+    width: 1.4vw;
+}

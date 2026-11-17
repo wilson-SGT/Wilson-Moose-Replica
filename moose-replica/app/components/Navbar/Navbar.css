@@ -3,11 +3,18 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    padding: 3.5vw 15vw 0 15vw;
+    padding-top: min(6.172vh, 3.472vw);
     width: 100vw;
     z-index: 99;
     background: transparent;
     color: black;
+    top: 0;
+}
+
+.blur-background-navbar{
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(5px);
 }
 
 .navbar-container{
@@ -16,7 +23,8 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 4vw;
+    margin-inline: min(5.333vh, 3vw);
+    gap: 1vw;;
 }
 
 .navbar-links-container{
@@ -24,14 +32,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    margin-inline: min(5.333vh, 3vw);
     height: 3vw;
     background-color: rgb(245, 245, 245);
     border-radius: 15vw;
 }
 
 .navbar-icon{
-    width: 15vw;
+    height: min(6.172vh, 3.472vw);
+    width: min(18.681vh, 10.508vw);
 }
 
 .navbar-link{
@@ -50,12 +59,12 @@
 
 .navbar-download-button{
     display: flex;
-    font-size: 1.2vw;
+    font-size: 1vw;
     background-color: black;
     color: rgb(0, 215, 118);
     border-radius: 15vw;
-    width: 17.5vw;
-    height: 3vw;
+    width: min(18.681vh, 10.508vw);
+    height: min(5.186vh, 2.917vw);
     justify-content: center;
     align-items: center;
 }

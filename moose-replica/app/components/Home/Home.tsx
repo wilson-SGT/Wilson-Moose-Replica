@@ -7,7 +7,7 @@ export default function Home() {
             <section className="section section-1" id="home">
                 <div className="content-container">
                     <div className="center-container">
-                        <div className="text-container">
+                        <div className="text-container1">
                             <div className="left-container">
                                 <div className="left-text">
                                     Start sharing
@@ -81,7 +81,6 @@ export default function Home() {
                                     </div>
                                     <div className="list-item">
                                         <p className="list-item-text">Authentic</p>
-                                        <div className="line-right"></div>
                                     </div>
                                 </div>
                             </div>
