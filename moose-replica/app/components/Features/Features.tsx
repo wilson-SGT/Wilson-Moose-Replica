@@ -19,7 +19,18 @@ export default function About() {
                         </div>
                     </div>
                     <div className="features-container">
-
+                        <div className="features-1">
+                            <img src="/assets/BackgroundCard1.png" alt="Background Card" className="background-features1"/>
+                        </div>
+                        <div className="features-2">
+                            <img src="/assets/BackgroundCard2.png" alt="Background Card" className="background-features2"/>
+                        </div>
+                        <div className="features-3">
+                            <img src="/assets/BackgroundCard3.png" alt="Background Card" className="background-features3"/>
+                        </div>
+                        <div className="features-4">
+                            <img src="/assets/BackgroundCard4.png" alt="Background Card" className="background-features4"/>
+                        </div>
                     </div>
                 </div>
             </section>

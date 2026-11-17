@@ -1,13 +1,13 @@
 .section-reference{
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     opacity: 0.3;
     pointer-events: none;
     z-index: 999;
     object-fit: cover;
-    top: -1vw;
+    top: 3.3vw;
 }
 
 .section-3{
@@ -58,4 +58,34 @@
 }
 .key-title-2{
     color: #00d776;
+}
+
+.features-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 7.5vw;
+    gap: 1.6vw;
+    overflow: hidden;
+    height: 74.3vw;
+}
+.features-1{
+    width: 33.8vw;
+}
+.features-2{
+    width: 33vw;
+}
+.background-features2{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-6.4vw);
+}
+.features-3{
+    width: 41vw;
+}
+.features-4{
+    width: 26.5vw;
+}
+.background-features-4{
+    object-fit: cover;
 }
