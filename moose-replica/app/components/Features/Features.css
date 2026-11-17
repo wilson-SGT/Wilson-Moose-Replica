@@ -7,7 +7,7 @@
     pointer-events: none;
     z-index: 999;
     object-fit: cover;
-    top: 0.75vw;
+    top: -1vw;
 }
 
 .section-3{

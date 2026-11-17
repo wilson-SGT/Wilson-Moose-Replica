@@ -16,16 +16,16 @@
 }
 
 .intro-logo {
-    width: 10vw;
+    width: clamp(80px, 10vw, 150px);
     opacity: 0;
  }
 
 .intro-text {
     display: flex;
     flex-direction: row;
-    gap: 1vw;
-    padding-left: 1vw;
-    height: 3vw;
+    gap: clamp(3px, 2vw, 12px);
+    padding-left: clamp(5px, 1vw, 15px);
+    height: clamp(24px, 3vw, 45px);
 }
 
 .text {

@@ -26,7 +26,7 @@ export default function Intro() {
                 {
                     x: 0,
                     opacity: 1,
-                    duration: 0.5,
+                    duration: 0.4,
                     stagger: 0.05,
                     filter: "blur(0px)",
                 })
