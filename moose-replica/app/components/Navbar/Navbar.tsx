@@ -1,7 +1,11 @@
 "use client"
 import "./Navbar.css"
+import { useState } from "react";
 
 export default function Navbar() {
+    const [open, setOpen] = useState(false);
+    const [mobile, setMobile] = useState(false);
+
     return(
         <div className="navbar">
             <div className="blur-background-navbar">
@@ -31,6 +35,12 @@ export default function Navbar() {
                 </div>
                 <div className="navbar-download-button">
                     <span className="navbar-download-text">Download Now</span>
+                </div>
+
+                <div className={mobile ? "mobile-menu-button active" : "mobile-menu-button"} onClick={() => setMobile(!mobile)}>
+                    <div className="line line-1"></div>
+                    <div className="line line-2"></div>
+                    <div className="line line-3"></div>
                 </div>
             </div>
         </div>
