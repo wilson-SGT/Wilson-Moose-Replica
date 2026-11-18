@@ -1,128 +1,135 @@
 .section-2{
     position: relative;
     color: black;
-    min-height: 65vh;
+    min-height: min(85.8vh, 48.3vw);
 }
 .content-container2 {
     width: 100%;
-    padding: 6.8vw 15.156vw 0 15.156vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: min(12.3vh, 6.9vw) 0 0 0;
     box-sizing: border-box;
 }
 .inner-container{
     position: absolute;
-    width: 69.5vw;
-    height: 44.15vw;
+    top: min(12.3vh, 6.9vw);
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(123.5vh, 69.4vw);
+    height: min(73.5vh, 41.3vw);
 }
 
 .bubble-1{
     position: absolute;
     background-color: #ddf657;
-    width: 14vw;
-    height: 6.8vw;
-    border-radius: 10vw;
+    width: min(24.7vh, 13.9vw);
+    height: min(12.3vh, 6.9vw);
+    border-radius: min(24.7vh, 13.9vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-bubble-1{
-    width: 5.1vw;
+    width: min(9.3vh, 5.2vw);
 }
 .bubble-2{
     position: absolute;
-    top: 6.8vw;
+    top: min(12.1vh, 6.8vw);
     right: 0;
     background-color: #8ff657;
-    width: 14vw;
-    height: 6.8vw;
-    border-radius: 10vw;
+    width: min(24.7vh, 13.9vw);
+    height: min(12.3vh, 6.9vw);
+    border-radius: min(24.7vh, 13.9vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-bubble-2{
-    width: 5.1vw;
+    width: min(9.3vh, 5.2vw);
 }
 .bubble-3{
     position: absolute;
-    bottom: 9.2vw;
+    bottom: min(11vh, 6.2vw);
     right: 0;
     background-color: #57a1f6;
-    width: 14vw;
-    height: 6.8vw;
-    border-radius: 10vw;
+    width: min(24.7vh, 13.9vw);
+    height: min(12.3vh, 6.9vw);
+    border-radius: min(24.7vh, 13.9vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-bubble-3{
-    width: 5.1vw;
+    width: min(9.3vh, 5.2vw);
 }
 .bubble-4{
     position: absolute;
-    bottom: 0;
+    bottom: min(-5.2vh, -2.9vw);
     background-color: #f6be57;
-    width: 14vw;
-    height: 6.8vw;
-    border-radius: 10vw;
+    width: min(24.7vh, 13.9vw);
+    height: min(12.3vh, 6.9vw);
+    border-radius: min(24.7vh, 13.9vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-bubble-4{
-    width: 5.1vw;
+    width: min(9.3vh, 5.2vw);
 }
 
 .text-container2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5.7vw;
+    width: min(123.5vh, 69.4vw);
+    padding-top: min(11.2vh, 6.3vw);
 }
 
 .title-text{
-    font-size: 3.5vw;
+    font-size: min(6.2vh, 3.5vw);
     font-weight: 700;
     text-align: center;
-    line-height: 4.4vw;
+    line-height: 1.26;
 }
 .sub-text{
-    padding-top: 5.5vw;
-    font-size: 1.4vw;
+    padding-top: min(11.4vh, 6.4vw);
+    font-size: min(2.5vh, 1.4vw);
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: min(3.6vh, 2vw);
 }
 .line-left{
     background: linear-gradient(-90deg, #289600, transparent 90%);
-    width: 3.5vw;
-    height: 0.225vw;
+    width: min(7.4vh, 4.2vw);
+    height: 4px;
 }
 .line-right2{
     background: linear-gradient(90deg, #289600, transparent 90%);
-    width: 3.5vw;
-    height: 0.225vw;
+    width: min(7.4vh, 4.2vw);
+    height: 4px;
 }
 
 .middle-download-button{
-    margin-top: 3.1vw;
+    margin-top: min(5.9vh, 3.3vw);
     background-color: #00D776;
-    border-radius: 7vw;
+    border-radius: min(12.3vh, 6.9vw);
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    height: 4vw;
-    width: 17.8vw;
+    height: min(7.4vh, 4.2vw);
+    width: min(31.9vh, 17.9vw);
 }
 .download-now-text-2 {
     font-weight: 500;
-    font-size: 1.4vw;
-    margin-right: 1.5vw;
+    font-size: min(2.5vh, 1.4vw);
+    margin-right: min(2.5vh, 1.4vw);
 }
 .middle-arrow-container{
-    width: 4vw;
-    height: 4vw;
+    width: min(7.4vh, 4.2vw);
+    height: min(7.4vh, 4.2vw);
     background-color: #000;
     border-radius: 50%;
     display: flex;
@@ -130,5 +137,5 @@
     justify-content: center;
 }
 .middle-arrow-icon{
-    width: 1.4vw;
+    width: min(2.5vh, 1.4vw);
 }

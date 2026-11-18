@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,4 +29,5 @@ body {
   background: white;
   color: var(--foreground);
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
 }
