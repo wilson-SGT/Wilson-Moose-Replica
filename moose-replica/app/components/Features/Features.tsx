@@ -5,7 +5,6 @@ export default function About() {
     return(
         <>
             <section className="section section-3" id="key-features">
-                <img src="/assets/reference-screenshot4.png" alt="reference image" className="section-reference"/>
                 <div className="content-container3">
                     <div className="text-container3">
                         <div className="key-label">

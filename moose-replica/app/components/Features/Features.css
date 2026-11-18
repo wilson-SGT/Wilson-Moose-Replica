@@ -1,15 +1,3 @@
-.section-reference{
-    position: absolute;
-    top: 118px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1920px;
-    height: auto;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 999;
-}
-
 .section-3{
     position: relative;
     color: black;
