@@ -92,6 +92,9 @@
     text-align: center;
     line-height: 1.26;
 }
+.title-mini-text{
+    display: inline-block;
+}
 .sub-text{
     padding-top: min(11.4vh, 6.4vw);
     font-size: min(2.5vh, 1.4vw);

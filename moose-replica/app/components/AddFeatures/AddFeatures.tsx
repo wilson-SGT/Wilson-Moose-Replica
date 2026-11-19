@@ -19,8 +19,14 @@ export default function AddFeatures() {
                 scrub: true,
             },
         })
-            .to(".add-text-upper", { xPercent: 25, ease: "none" }, 0)
-            .to(".add-text-bottom", { xPercent: -25, ease: "none" }, 0)
+            .to(".add-text-upper", {
+                xPercent: -25,
+                ease: "none"
+            }, 0)
+            .to(".add-text-bottom", {
+                xPercent: 25,
+                ease: "none"
+            }, 0)
     }, { scope: sectionRef })
 
     return(

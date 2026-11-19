@@ -54,10 +54,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 0 min(3.1vh, 1.7vw);
     border-radius: min(12.3vh, 6.9vw);
     height: 60%;
-    transition: background-color 0.5s ease, height 0.5s ease;
+    transition: background-color 0.5s ease, height 0.5s ease, margin 0.5s ease;
 }
 .navbar-dot{
     opacity: 0;
@@ -69,10 +70,12 @@
 .navbar-link-text{
     font-size: min(2vh, 1.1vw);
     color: rgb(6, 20, 12);
+    white-space: nowrap;
 }
 :is(.link-1, .link-2, .link-3, .link-4).active{
     background-color: #00d776;
     height: 100%;
+    margin-inline: min(2vh, 1.1vw);
     .navbar-dot {
         opacity: 1;
         transform: translateX(0);
