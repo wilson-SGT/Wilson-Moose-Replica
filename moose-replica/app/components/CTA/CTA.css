@@ -1,0 +1,22 @@
+.section7{
+    position: relative;
+    color: black;
+    width: 100%;
+}
+.content-container7{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: min(15.6vh, 8vw);
+    box-sizing: border-box;
+    gap: min(11.022vh, 6.2vw);
+}
+
+.cta-container{
+    display: flex;
+    flex-direction: column;
+    width: min(123.5vh, 69.4vw);
+    gap: min(6.172vh, 3.472vw);
+    height: fit-content;
+}

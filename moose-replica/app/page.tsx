@@ -5,6 +5,7 @@ import AboutSection from "./components/About/About"
 import FeaturesSection from "./components/Features/Features"
 import AddFeaturesSection from "./components/AddFeatures/AddFeatures"
 import BenefitsSection from "./components/Benefits/Benefits"
+import CTASection from "./components/CTA/CTA"
 import Footer from "./components/Footer/Footer"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <FeaturesSection/>
             <AddFeaturesSection/>
             <BenefitsSection/>
+            <CTASection/>
         </div>
         <Footer/>
     </>
