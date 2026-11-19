@@ -8,7 +8,7 @@ import AddFeaturesSection from "./components/AddFeatures/AddFeatures"
 export default function Home() {
   return (
     <>
-        <Intro />
+        <Intro/>
         <Navbar/>
         <div>
             <HomeSection/>

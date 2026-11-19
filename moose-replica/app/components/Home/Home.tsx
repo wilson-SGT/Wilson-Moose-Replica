@@ -1,7 +1,41 @@
 "use client"
 import "./Home.css"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react"
+
+gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 export default function Home() {
+    useGSAP(() => {
+        const section = document.querySelector<HTMLElement>(".section-1")
+        if (!section) return
+
+        gsap.fromTo(".image-container", {
+            yPercent: 0
+        }, {
+            yPercent: -30,
+            scrollTrigger: {
+                trigger: section,
+                start: "top center",
+                end: "bottom top",
+                scrub: true,
+            },
+        })
+
+        const xto = gsap.quickTo(".image-phone", "x", { duration: 0.6, ease: "power3" })
+        const yto = gsap.quickTo(".image-phone", "y", { duration: 0.6, ease: "power3" })
+
+        const follow = (e: MouseEvent) => {
+            const rect = section.getBoundingClientRect()
+            xto(((e.clientX - rect.left) / rect.width - 0.5) * -40)
+            yto(((e.clientY - rect.top) / rect.height - 0.5) * -40)
+        }
+
+        section.addEventListener("mousemove", follow)
+        return () => section.removeEventListener("mousemove", follow)
+    })
+
     return(
         <>
             <section className="section section-1" id="home">

@@ -84,9 +84,9 @@
     position: absolute;
     height: min(68.9vh, 38.8vw);
     width: min(69.1vh, 38.9vw);
-    top: -20%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%);
+    margin-left: calc(min(69.1vh, 38.9vw) * -0.5);
     right: unset;
 }
 .image-phone{
@@ -95,6 +95,7 @@
     position: relative;
     width: 100%;
     z-index: 3;
+    will-change: transform;
 }
 
 .right-text{

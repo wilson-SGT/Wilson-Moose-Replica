@@ -6,10 +6,15 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
     const [mobile, setMobile] = useState(false);
 
+    const blurLayers = Array.from({ length: 8 }, (_, i) => (
+        <div key={i} className="blur-layer"/>
+    ))
+
     return(
         <div className="navbar">
-            <div className="blur-background-navbar">
-
+            <div className="blur-background">
+                <div className="blur-section blur-section-top">{blurLayers}</div>
+                <div className="blur-section blur-section-bottom">{blurLayers}</div>
             </div>
             <div className="navbar-container">
                 <div className="navbar-icon">
