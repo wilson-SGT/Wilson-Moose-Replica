@@ -166,7 +166,7 @@
 
 .line-divider{
     position: relative;
-    margin-top: 2vw;
+    margin-top: min(4vh, 2vw);
     width: 60vw;
 }
 
@@ -174,7 +174,7 @@
     display: flex;
     text-align: center;
     font-size: min(3.7vh, 2.1vw);
-    margin-top: max(2vh, 6vw);
+    margin-top: min(8vh, 6vw);
     line-height: 1.4;
 }
 
