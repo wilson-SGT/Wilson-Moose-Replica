@@ -1,7 +1,7 @@
 "use client"
 import "./Features.css"
 
-export default function About() {
+export default function Features() {
     return(
         <>
             <section className="section section-3" id="key-features">

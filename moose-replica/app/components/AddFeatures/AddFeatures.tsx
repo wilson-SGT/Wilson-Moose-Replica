@@ -31,7 +31,7 @@ export default function AddFeatures() {
 
     return(
         <>
-            <section ref={sectionRef} className="section section4" id="more-features">
+            <section ref={sectionRef} className="section section4">
                 <div className="content-container4">
                     <div className="text-container4">
                         <span className="span-add-label">...and more additional features</span>

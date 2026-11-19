@@ -83,6 +83,12 @@
     .navbar-link-text{
     }
 }
+.link-1.active{
+    margin-left: 0;
+}
+.link-4.active{
+    margin-right: 0;
+}
 
 .navbar-download-button{
     display: flex;
@@ -235,9 +241,9 @@
         opacity: 0;
     }
     .mobile-menu-button.active .line-1{
-        transform: translateY(350%) rotate(-45deg);
+        transform: translateY(350%) rotate(45deg);
     }
     .mobile-menu-button.active .line-3{
-        transform: translateY(-350%) rotate(45deg);
+        transform: translateY(-375%) rotate(-45deg);
     }
 }
