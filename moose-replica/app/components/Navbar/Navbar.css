@@ -55,13 +55,30 @@
     flex-direction: row;
     align-items: center;
     padding: 0 min(3.1vh, 1.7vw);
+    border-radius: min(12.3vh, 6.9vw);
+    height: 60%;
+    transition: background-color 0.5s ease, height 0.5s ease;
 }
 .navbar-dot{
     opacity: 0;
+    margin-right: 1vw;
+    transform: translateX(-0.75vw);
+    font-size: 1vw;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .navbar-link-text{
     font-size: min(2vh, 1.1vw);
     color: rgb(6, 20, 12);
+}
+:is(.link-1, .link-2, .link-3, .link-4).active{
+    background-color: #00d776;
+    height: 100%;
+    .navbar-dot {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .navbar-link-text{
+    }
 }
 
 .navbar-download-button{

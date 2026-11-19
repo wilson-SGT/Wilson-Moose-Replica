@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     const [mobile, setMobile] = useState(false);
+    const [active, setActive] = useState(0);
 
     const blurLayers = Array.from({ length: 8 }, (_, i) => (
         <div key={i} className="blur-layer"/>
@@ -21,19 +22,19 @@ export default function Navbar() {
                     <img src="/assets/moose-logo-text.png" alt="moose-logo" className="navbar-moose-logo"/>
                 </div>
                 <div className="navbar-links-container">
-                    <a href="#home" className="navbar-link link-1">
+                    <a href="#home" className={active === 1 ? "navbar-link link-1 active" : "navbar-link link-1"} onClick={() => setActive(1)}>
                         <span className="navbar-dot">•</span>
                         <div className="navbar-link-text">Home</div>
                     </a>
-                    <a href="#about-us" className="navbar-link link-2">
+                    <a href="#about-us" className={active === 2 ? "navbar-link link-2 active" : "navbar-link link-2"} onClick={() => setActive(2)}>
                         <span className="navbar-dot">•</span>
                         <div className="navbar-link-text">About Us</div>
                     </a>
-                    <a href="#key-features" className="navbar-link link-3">
+                    <a href="#key-features" className={active === 3 ? "navbar-link link-3 active" : "navbar-link link-3"} onClick={() => setActive(3)}>
                         <span className="navbar-dot">•</span>
                         <div className="navbar-link-text">Key Features</div>
                     </a>
-                    <a href="#faq" className="navbar-link link-4">
+                    <a href="#faq" className={active === 4 ? "navbar-link link-4 active" : "navbar-link link-4"} onClick={() => setActive(4)}>
                         <span className="navbar-dot">•</span>
                         <div className="navbar-link-text">FAQ</div>
                     </a>
