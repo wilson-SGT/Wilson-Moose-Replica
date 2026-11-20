@@ -66,16 +66,19 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
+                            <div className="icon-moose-container">
+                                <img src="/assets/icon-moose.png" alt="icon-moose" className="icon-moose"/>
+                            </div>
                             <div className="image-container">
                                 <img src="/assets/phone-sec1.png" alt="Phone Image" className="image-phone"/>
                             </div>
                             <div className="right-container">
                                 <div className="right-text">
-                                    Discover the
+                                    <span>Discover the </span>
                                     <br/>
-                                    Social Media App That
-                                    <br/>
-                                    Values Authenticity
+                                    <span>Social Media App <br className="mobile-right-break"/> That</span>
+                                    <br className="desktop-right-break"/>
+                                    <span>Values Authenticity</span>
                                 </div>
                             </div>
                         </div>

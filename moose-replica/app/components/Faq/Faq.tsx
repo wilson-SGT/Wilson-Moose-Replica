@@ -97,7 +97,7 @@ export default function Benefits() {
 
     return(
         <>
-            <section className="section section6">
+            <section className="section section6" id="faq">
                 <div className="content-container6">
                     <div className="text-container6">
                         <div className="faq-label">

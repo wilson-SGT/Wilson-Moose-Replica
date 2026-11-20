@@ -209,6 +209,21 @@
 .mobile-menu-button {
     display: none;
 }
+.mobile-main-menu{
+    display: none;
+    background-color: #00d776;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 20vh;
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: min(3.125vh, 5.556vw);
+    transform: scale(.94);
+    align-items: center;
+    transition: top 2s ease, width 2s ease;
+}
 
 @media (max-width: 767px) {
     .navbar-links-container {
@@ -218,12 +233,15 @@
         display: none;
     }
     .navbar-icon{
+        position: relative;
+        z-index: 10;
         height: min(6.679vh, 11.874vw);
         width: min(20.213vh, 35.935vw);
     }
     .navbar-moose-logo{
         width: 100%;
         height: 100%;
+        z-index: 10;
     }
 
     .navbar {
@@ -236,6 +254,58 @@
         justify-content: space-between;
     }
 
+    .mobile-main-menu {
+        display: flex;
+        flex-direction: column;
+        top: -4vw;
+        left: -4%;
+        width: 107.5%;
+        height: 39vh;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-20vh) scaleX(1.35);
+        clip-path: inset(0 0 100% 0 round 5vw);
+        transform-origin: top center;
+        transition: opacity 350ms ease, transform 500ms cubic-bezier(.2, .8, .2, 1),
+            clip-path 500ms cubic-bezier(.2, .8, .2, 1), visibility 0s linear 500ms;
+    }
+    .mobile-main-menu.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0) scaleX(1);
+        clip-path: inset(0 0 0 0 round 5vw);
+        transition: opacity 350ms ease, transform 500ms cubic-bezier(.2, .8, .2, 1),
+            clip-path 500ms cubic-bezier(.2, .8, .2, 1), visibility 0s;
+    }
+    .mobile-navigation-links-container {
+        margin-top: 27.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: min(1.969vh, 3.5vw);
+        text-align: center;
+    }
+    .m-link {
+        font-size: min(2.5vh, 5vw);
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    .mobile-navbar-download-button{
+        display: flex;
+        flex: none;
+        font-size: min(2vh, 10vw);
+        background-color: black;
+        color: rgb(0, 215, 118);
+        border-radius: min(12.3vh, 6.9vw);
+        margin-top: 5vw;
+        width: min(45vh, 90vw);
+        height: min(5vh, 20vw);
+        justify-content: center;
+        align-items: center;
+    }
+
     .mobile-menu-button {
         display: flex;
         width: min(5.609vh, 9.972vw);
@@ -246,6 +316,7 @@
         flex-direction: column;
         justify-content: center;
         gap: min(.781vh, 1.389vw);
+        z-index: 10;
     }
     .line{
         background-color: #00d776;

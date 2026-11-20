@@ -201,3 +201,103 @@
     width: 1px;
     height: min(1.9vh, 1vw);
 }
+
+.icon-moose-container{
+    display: none;
+}
+
+.m-br{
+    display: none;
+}
+
+.mobile-right-break {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .text-container1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vw;
+        gap: 15vw;
+    }
+    .left-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-text{
+        text-align: center;
+        font-size: min(5.555vh, 8.333vw);
+        line-height: 1.36;
+    }
+    .left-line{
+        display: none;
+    }
+    .left-highlight{
+        color: #000;
+        justify-content: center;
+    }
+    .left-download-button{
+        background-color: #F5F5F5;
+        border-radius: min(12.3vh, 6.9vw);
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        height: 12.5vw;
+        width: 50vw;
+    }
+    .download-now-text {
+        font-weight: 500;
+        font-size: 4vw;
+        margin-right: 3vw;
+    }
+    .left-arrow-container{
+        width: 12.5vw;
+        height: 12.5vw;
+        background-color: #000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-arrow-icon{
+        width: 4vw;
+    }
+    .icon-moose-container{
+        display: flex;
+        height: 12.5vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-moose{
+        height: 100%;
+    }
+    .right-text{
+        text-align: center;
+        display: block;
+        font-size: 5vw;
+        line-height: 1.25;
+        position: relative;
+        top: 1vw;
+    }
+    .right-text br{
+        display: none;
+    }
+    .right-text .mobile-right-break {
+        display: initial;
+    }
+    .right-text .desktop-right-break {
+        display: none;
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .green-container{
+        display: none;
+    }
+}
