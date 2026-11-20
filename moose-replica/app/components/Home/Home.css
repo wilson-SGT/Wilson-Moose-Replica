@@ -85,9 +85,10 @@
     height: min(68.9vh, 38.8vw);
     width: min(69.1vh, 38.9vw);
     top: 0;
-    left: 50%;
+    left: 52.5%;
     margin-left: calc(min(69.1vh, 38.9vw) * -0.5);
     right: unset;
+    z-index: 3;
 }
 .image-phone{
     height: 100%;

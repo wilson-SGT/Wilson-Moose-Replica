@@ -14,12 +14,13 @@ export default function Home() {
         gsap.fromTo(".image-container", {
             yPercent: 0
         }, {
-            yPercent: -30,
+            yPercent: -50,
             scrollTrigger: {
                 trigger: section,
-                start: "top center",
+                start: "27.5% center",
                 end: "bottom top",
                 scrub: true,
+                markers: true,
             },
         })
 
@@ -28,8 +29,8 @@ export default function Home() {
 
         const follow = (e: MouseEvent) => {
             const rect = section.getBoundingClientRect()
-            xto(((e.clientX - rect.left) / rect.width - 0.5) * -40)
-            yto(((e.clientY - rect.top) / rect.height - 0.5) * -40)
+            xto(((e.clientX - rect.left) / rect.width - 0.5) * -50)
+            yto(((e.clientY - rect.top) / rect.height - 0.5) * -50)
         }
 
         section.addEventListener("mousemove", follow)
