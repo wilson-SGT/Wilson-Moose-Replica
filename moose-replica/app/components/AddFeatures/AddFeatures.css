@@ -18,6 +18,11 @@
 .span-add-label{
     font-size: min(6.2vh, 3.5vw);
     font-weight: 600;
+    display: flex;
+    gap: 0.2em;
+}
+.span-add-label-text{
+    display: inline-block;
 }
 
 .addfeatures-containers{

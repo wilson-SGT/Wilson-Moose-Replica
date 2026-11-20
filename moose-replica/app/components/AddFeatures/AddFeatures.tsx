@@ -27,14 +27,51 @@ export default function AddFeatures() {
                 xPercent: 25,
                 ease: "none"
             }, 0)
-    }, { scope: sectionRef })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".span-add-label",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".span-add-label-text", {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+            })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".addfeatures-containers",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".addfeatures-container", {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+            })
+    })
 
     return(
         <>
             <section ref={sectionRef} className="section section4">
                 <div className="content-container4">
                     <div className="text-container4">
-                        <span className="span-add-label">...and more additional features</span>
+                        <span className="span-add-label">
+                            <span className="span-add-label-text">...and </span>
+                            <span className="span-add-label-text">more </span>
+                            <span className="span-add-label-text">additional </span>
+                            <span className="span-add-label-text">features</span>
+                        </span>
                     </div>
                     <div className="addfeatures-containers">
                         <div className="addfeatures1-container addfeatures-container">

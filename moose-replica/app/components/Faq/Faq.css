@@ -45,10 +45,17 @@
     padding-top: min(4vh, 2vw);
     font-size: min(6.1vh, 3.5vw);
     font-weight: 500;
-    gap: 0.5vw;
+    gap: 0.2em;
 }
 .faq-title-2{
     color: #00d776;
+}
+.faq-title-1, .faq-title-2{
+    display: flex;
+    gap: 0.2em;
+}
+.faq-title-text{
+    display: inline-block;
 }
 
 .faqs-container{
@@ -82,6 +89,7 @@
 }
 .faq-question{
     font-weight: 600;
+    font-size: min(2.469vh, 1.389vw);
     width: 100%;
     transition: color 0.25s ease;
 }

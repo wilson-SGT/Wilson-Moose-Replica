@@ -48,6 +48,13 @@
 .key-title-2{
     color: #00d776;
 }
+.key-title-1, .key-title-2{
+    display: flex;
+    gap: 0.2em;
+}
+.key-titles{
+    display: inline-block;
+}
 
 .features-container{
     display: flex;
@@ -80,17 +87,77 @@
     justify-content: center;
     padding: min(5.3vh, 3vw) 0;
 }
+.item1-line{
+    height: min(30.578vh, 17.2vw);
+    left: 50%;
+    object-fit: contain;
+    position: absolute;
+    top: 9.5%;
+    translate: -50% 0;
+    width: min(39.259vh, 22.083vw);
+    opacity: 0;
+    z-index: 1;
+}
+.item1-icons-container{
+    height: min(37.689vh, 21.2vw);
+    left: 50%;
+    position: absolute;
+    top: 4%;
+    translate: -50% 0;
+    width: min(49.778vh, 28vw);
+    z-index: 3;
+}
+.item1-icons-container img{
+    height: min(5.556vh, 3.125vw);
+    opacity: 0;
+    position: absolute;
+    width: min(5.556vh, 3.125vw);
+}
+.item1-p1{
+    left: 2.5%;
+    top: 8%;
+    transform: translate(150%, 150%);
+}
+.item1-p2{
+    left: 45%;
+    top: 2%;
+    translate: -50% 0;
+    transform: translateY(160%);
+}
+.item1-p3{
+    right: 2%;
+    top: 5%;
+    transform: translate(-150%, 150%);
+}
+.item1-p4{
+    bottom: 4%;
+    left: 2.5%;
+    transform: translate(150%, -150%);
+}
+.item1-p5{
+    bottom: 1%;
+    left: 45%;
+    translate: -50% 0;
+    transform: translateY(-150%);
+}
+.item1-p6{
+    bottom: 7%;
+    right: 2%;
+    transform: translate(-150%, -150%);
+}
 .item1-main-image{
     width: min(37.036vh, 20.833vw);
     height: min(19.428vh, 10.928vw);
     object-fit: contain;
     flex-shrink: 0;
+    position: relative;
     transform: rotate(-5deg);
+    z-index: 10;
 }
 .item1-text-container{
     display: flex;
     flex-direction: column;
-    padding-top: min(2vh, 1.1vw);
+    padding-top: min(4vh, 2vw);
     gap: min(0.5vh, 0.3vw);
 }
 .item1-text{
@@ -134,28 +201,34 @@
     color: #777;
 }
 .item2-image-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    height: min(29vh, 16.3vw);
     margin-top: min(10.7vh, 6vw);
     position: relative;
 }
 .item2-first-image{
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 100%;
     z-index: 3;
 }
 .item2-second-image{
-    position: relative;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    translate: -50% 0;
     z-index: 2;
     width: min(37.3vh, 21vw);
-    transform: translateY(-45%);
 }
 .item2-third-image{
-    position: relative;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    translate: -50% 0;
     z-index: 1;
     width: min(30.2vh, 17vw);
-    transform: translateY(-90%);
 }
 
 .features-3{
@@ -234,6 +307,7 @@
 }
 .item4-text{
     color: white;
+    display: inline-block;
     font-size: min(4vh, 2.3vw);
     font-weight: 600;
 }

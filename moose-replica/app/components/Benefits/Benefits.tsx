@@ -8,6 +8,24 @@ import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 export default function Benefits() {
+    useGSAP(()=>{
+        const cards = gsap.utils.toArray(".benefit-container");
+
+        cards.forEach((card, index) => {
+            gsap.to(card, {
+                opacity: index === cards.length - 1 ? 1 : 0,
+                scale: index === cards.length - 1 ? 1 : 0.8,
+                scrollTrigger: {
+                    trigger: card,
+                    start: "-40% top",
+                    end: "+=70%",
+                    pin: true,
+                    pinSpacing: false,
+                    scrub: true,
+                }
+            });
+        });
+    })
     return(
         <>
             <section className="section section5">

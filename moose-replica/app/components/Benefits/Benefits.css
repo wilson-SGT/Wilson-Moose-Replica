@@ -56,6 +56,7 @@
     width: min(123.5vh, 69.4vw);
     gap: min(6.172vh, 3.472vw);
     height: fit-content;
+    padding-bottom: 80vh;
 }
 .benefit-container{
     position: relative;

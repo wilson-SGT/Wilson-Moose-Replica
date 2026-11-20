@@ -8,6 +8,48 @@ import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 export default function Benefits() {
+    useGSAP(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".cta-text-container",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".cta-texts", {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+            })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".google-play-container",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".cta-left-image-container", {
+                opacity: 0,
+                x: 100,
+            }, {
+                opacity: 1,
+                x: 0,
+                stagger: 0.1,
+            })
+            .fromTo(".cta-right-image-container", {
+                opacity: 0,
+                x: -100,
+            }, {
+                opacity: 1,
+                x: 0,
+                stagger: 0.1,
+            }, "<")
+    })
     return(
         <>
             <section className="section section7">
@@ -17,17 +59,21 @@ export default function Benefits() {
                         <div className="cta-content-container">
                             <div className="cta-text-container">
                                 <div className="cta-text">
-                                    <span className="cta-1-text">Your </span>
-                                    <span className="cta-1-text">First </span>
-                                    <span className="cta-1-text">Step </span>
-                                    <span className="cta-1-text">To </span>
-                                    <span className="cta-1-text">Create </span>
-                                    <br/>
-                                    <span className="cta-2-text">Content </span>
-                                    <span className="cta-2-text">That </span>
-                                    <br/>
-                                    <span className="cta-3-text">Values </span>
-                                    <span className="cta-3-text">Authenticity </span>
+                                    <div className="cta-1-text-container">
+                                        <span className="cta-1-text cta-texts">Your </span>
+                                        <span className="cta-1-text cta-texts">First </span>
+                                        <span className="cta-1-text cta-texts">Step </span>
+                                        <span className="cta-1-text cta-texts">To </span>
+                                        <span className="cta-1-text cta-texts">Create </span>
+                                    </div>
+                                    <div className="cta-2-text-container">
+                                        <span className="cta-2-text cta-texts">Content </span>
+                                        <span className="cta-2-text cta-texts">That </span>
+                                    </div>
+                                    <div className="cta-3-text-container">
+                                        <span className="cta-3-text cta-texts">Values </span>
+                                        <span className="cta-3-text cta-texts">Authenticity </span>
+                                    </div>
                                 </div>
                             </div>
                             <img className="cta-line" src="/assets/cta-line.png" alt="Cta line"/>

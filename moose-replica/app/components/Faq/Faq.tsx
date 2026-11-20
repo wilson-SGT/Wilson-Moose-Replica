@@ -60,6 +60,41 @@ export default function Benefits() {
             answer: "Our dedicated customer support team is always here to assist you. Reach out via the app or on our website for any help you need.",
         }
     ]
+    useGSAP(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".faq-title",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".faq-title-text", {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+            })
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".faqs-container",
+                start: "top bottom",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+            .fromTo(".faq-container", {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+            })
+    })
+
     return(
         <>
             <section className="section section6">
@@ -70,8 +105,13 @@ export default function Benefits() {
                             <span className="span-faq-label">FAQ</span>
                         </div>
                         <div className="faq-title">
-                            <span className="faq-title-1">Frequently Asked </span>
-                            <span className="faq-title-2">Questions</span>
+                            <span className="faq-title-1">
+                                <span className="faq-title-text">Frequently </span>
+                                <span className="faq-title-text">Asked</span>
+                            </span>
+                            <span className="faq-title-2">
+                                <span className="faq-title-text">Questions</span>
+                            </span>
                         </div>
                     </div>
                     <div className="faqs-container">

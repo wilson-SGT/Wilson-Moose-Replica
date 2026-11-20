@@ -46,7 +46,6 @@
     font-weight: 400;
     font-size: min(6.24vh, 3.51vw);
     line-height: 1.24;
-
 }
 .cta-1-text{
     color: #fff;
@@ -56,6 +55,14 @@
 }
 .cta-3-text{
     color: #00d776;
+}
+.cta-1-text-container, .cta-2-text-container, .cta-3-text-container{
+    display: flex;
+    gap: 0.2em;
+    justify-content: center;
+}
+.cta-texts{
+    display: inline-block;
 }
 
 .cta-line{
@@ -106,8 +113,15 @@
     position: relative;
     top: 50%;
     flex: 0 0 auto;
-    -webkit-mask-image: linear-gradient(270deg, #000, transparent 92%);
-    mask-image: linear-gradient(270deg, #000, transparent 92%);
+
+}
+.cta-left-image-container{
+    -webkit-mask-image: linear-gradient(170deg, #000, transparent 92%);
+    mask-image: linear-gradient(170deg, #000, transparent 92%);
+}
+.cta-right-image-container{
+    -webkit-mask-image: linear-gradient(170deg, #000, transparent 92%);
+    mask-image: linear-gradient(170deg, #000, transparent 92%);
 }
 .cta-left-image, .cta-right-image{
     width: 100%;
