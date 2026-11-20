@@ -17,22 +17,26 @@ export default function Benefits() {
                         <div className="cta-content-container">
                             <div className="cta-text-container">
                                 <div className="cta-text">
-                                    <span className="cta-1-text">Your</span>
-                                    <span className="cta-1-text">First</span>
-                                    <span className="cta-1-text">Step</span>
-                                    <span className="cta-1-text">To</span>
-                                    <span className="cta-1-text">Create</span>
+                                    <span className="cta-1-text">Your </span>
+                                    <span className="cta-1-text">First </span>
+                                    <span className="cta-1-text">Step </span>
+                                    <span className="cta-1-text">To </span>
+                                    <span className="cta-1-text">Create </span>
                                     <br/>
-                                    <span className="cta-2-text">Content</span>
-                                    <span className="cta-2-text">That</span>
+                                    <span className="cta-2-text">Content </span>
+                                    <span className="cta-2-text">That </span>
                                     <br/>
-                                    <span className="cta-3-text">Values</span>
-                                    <span className="cta-3-text">Authenticity</span>
+                                    <span className="cta-3-text">Values </span>
+                                    <span className="cta-3-text">Authenticity </span>
                                 </div>
                             </div>
                             <img className="cta-line" src="/assets/cta-line.png" alt="Cta line"/>
                             <div className="google-play-container">
-                                <span className="google-play-desc">Express yourself honestly and connect through moments that truly matter.</span>
+                                <span className="google-play-desc">
+                                    Express yourself honestly and connect through moments
+                                    <br/>
+                                    that truly matter.
+                                </span>
                                 <div className="google-play">
                                     <img className="google-play-image" src="/assets/cta-googleplay.png" alt="Google Play"/>
                                 </div>

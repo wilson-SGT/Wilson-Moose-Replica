@@ -20,7 +20,6 @@ export default function Home() {
                 start: "27.5% center",
                 end: "bottom top",
                 scrub: true,
-                markers: true,
             },
         })
 

@@ -22,7 +22,7 @@ export default function Navbar() {
                     <img src="/assets/moose-logo-text.png" alt="moose-logo" className="navbar-moose-logo"/>
                 </div>
                 <div className="navbar-links-container">
-                    <a href="#home" className={active === 1 ? "navbar-link link-1 active" : "navbar-link link-1"} onClick={() => setActive(1)}>
+                    <a href="#" className={active === 1 ? "navbar-link link-1 active" : "navbar-link link-1"} onClick={() => setActive(1)}>
                         <span className="navbar-dot">•</span>
                         <div className="navbar-link-text">Home</div>
                     </a>

@@ -70,7 +70,7 @@ export default function AddFeatures() {
                             </div>
                             <div className="addfeatures-text-container">
                                 <span className="addfeatures-text">Verified, For Real</span>
-                                <span className="addfeatures-subtext">Every user is verified, so you know who you're connecting with.</span>
+                                <span className="addfeatures-subtext">Every user is verified, so you know who you&apos;re connecting with.</span>
                             </div>
                         </div>
                         <div className="addfeatures5-container addfeatures-container">
