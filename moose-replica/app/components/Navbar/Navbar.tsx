@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div className="blur-section blur-section-top">{blurLayers}</div>
                 <div className="blur-section blur-section-bottom">{blurLayers}</div>
             </div>
-            <div className="navbar-container">
+            <div className={mobile ? "navbar-container menu-open" : "navbar-container"}>
                 <div className="navbar-icon">
                     <img src="/assets/moose-logo-text.png" alt="moose-logo" className="navbar-moose-logo"/>
                 </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
                         <div className="navbar-link-text">FAQ</div>
                     </a>
                 </div>
-                <div className="navbar-download-button">
+                <div className="navbar-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                     <span className="navbar-download-text">Download Now</span>
                 </div>
 
@@ -94,7 +94,7 @@ export default function Navbar() {
                             <span>FAQ</span>
                         </a>
                     </div>
-                    <div className="mobile-navbar-download-button">
+                    <div className="mobile-navbar-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                         <span className="mobile-navbar-download-text">Download Now</span>
                     </div>
                 </div>

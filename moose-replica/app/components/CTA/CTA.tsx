@@ -56,6 +56,7 @@ export default function Benefits() {
                 <div className="content-container7">
                     <div className="cta-container">
                         <img className="cta-bg" src="/assets/section7-bg.png" alt="Cta"/>
+                        <img className="m-cta-bg" src="/assets/m-section7-bg.png" alt="Cta"/>
                         <div className="cta-content-container">
                             <div className="cta-text-container">
                                 <div className="cta-text">
@@ -79,12 +80,13 @@ export default function Benefits() {
                             <img className="cta-line" src="/assets/cta-line.png" alt="Cta line"/>
                             <div className="google-play-container">
                                 <span className="google-play-desc">
-                                    Express yourself honestly and connect through moments
+                                    <span>Express yourself honestly and connect through moments </span>
                                     <br/>
-                                    that truly matter.
+                                    <span>that truly matter.</span>
                                 </span>
                                 <div className="google-play">
-                                    <img className="google-play-image" src="/assets/cta-googleplay.png" alt="Google Play"/>
+                                    <img className="google-play-image" src="/assets/cta-googleplay.png" alt="Google Play" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}/>
+                                    <img className="m-google-play-image" src="/assets/m-google-play.png" alt="Google Play" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}/>
                                 </div>
                             </div>
                             <div className="cta-image-container">

@@ -102,3 +102,107 @@
     height: min(51.9vh, 29.2vw);
     object-fit: contain;
 }
+.m-add-phone-image{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .content-container4{
+    }
+
+    .text-container4{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .span-add-label{
+        max-width: 100%;
+        font-size: min(4vh, 8vw);
+        line-height: 1.08;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .addfeatures-containers{
+        display: grid;
+        margin-top: min(12vh, 24vw);
+        margin-inline: auto;
+        justify-items: center;
+        gap: min(3vh, 6vw);
+    }
+
+    .addfeatures-container{
+        height: min(16.406vh, 29.167vw);
+        width: min(50vh, 88.889vw);
+        align-self: center;
+        padding: min(1.8vh, 3.5vw);
+        gap: min(2.7vh, 5.3vw);
+        border-radius: min(1.4vh, 2.8vw);
+    }
+
+    .addfeatures-image-container{
+        justify-content: center;
+        flex: 0 0 min(7.2vh, 14.5vw);
+        margin-left: min(1.5vh, 3vw);
+    }
+
+    .addfeatures-image{
+        display: block;
+        width: min(9.65vh, 17.156vw);
+        height: min(9.65vh, 17.156vw);
+        object-fit: contain;
+    }
+
+    .addfeatures-text-container{
+        min-width: 0;
+        gap: min(1.5vh, 2.5vw);
+    }
+
+    .addfeatures-text{
+        font-size: min(2vh, 4vw);
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .addfeatures-subtext{
+        width: auto;
+        font-size: min(1.875vh, 3.5vw);
+        line-height: 1.35;
+    }
+
+    .addphone-container{
+        width: min(50vh, 88.889vw);
+        height: min(64.063vh, 113.889vw);
+        margin-top: min(12.5vh, 25vw);
+        overflow: hidden;
+    }
+
+    .add-phone-image{
+        display: none;
+    }
+    .m-add-phone-image{
+        display: flex;
+        height: min(64.063vh, 113.889vw);
+        width: min(50vh, 88.889vw);
+        z-index: 3;
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 97%);
+    }
+
+    .add-phone-text{
+        display: none;
+    }
+
+    .add-text-upper{
+        top: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .add-text-bottom{
+        right: 50%;
+        bottom: 9%;
+        transform: translateX(50%);
+    }
+
+}

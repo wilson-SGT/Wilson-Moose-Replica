@@ -94,7 +94,7 @@ export default function About() {
                             <div className="line-right2 sec2-lines"/>
                         </div>
                         <div className="middle-download">
-                            <div className="middle-download-button">
+                            <div className="middle-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                 <div className="middle-download-texts">
                                     <span className="download-now-text-2">
                                         Download Now

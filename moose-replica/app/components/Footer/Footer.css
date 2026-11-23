@@ -49,3 +49,33 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 767px) {
+    .footer{
+        height: fit-content;
+    }
+    .footer-content-container{
+        width: min(50vh, 88.889vw);
+        padding-top: 15vw;
+    }
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-line{
+        margin-bottom: min(3.375vh, 6vw);
+    }
+    .copyright-text{
+        font-size: min(2.813vh, 5vw);
+        letter-spacing: min(-0.163vh, -0.29vw);
+        line-height: 1.1;
+        margin-bottom: min(4.05vh, 7.2vw);
+        width: 75%;
+    }
+    .footer-download-button{
+        font-size: min(6.563vh, 4.444vw);
+        height: min(6.188vh, 11.667vw);
+        width: min(23.644vh, 42.033vw);
+        margin-bottom: 10vw;
+    }
+}

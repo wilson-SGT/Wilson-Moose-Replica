@@ -43,23 +43,78 @@ export default function AddFeatures() {
                 y: 0,
                 stagger: 0.1,
             })
-        gsap.timeline({
+
+        gsap.fromTo(".addfeatures1-container", {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
             scrollTrigger: {
-                trigger: ".addfeatures-containers",
-                start: "top bottom",
+                trigger: ".addfeatures1-container",
+                start: "top 80%",
                 end: "bottom top",
                 toggleActions: "play none none reverse",
             }
         })
-            .fromTo(".addfeatures-container", {
-                opacity: 0,
-                y: 75,
-            }, {
-                opacity: 1,
-                y: 0,
-                stagger: 0.1,
-            })
-    })
+        gsap.fromTo(".addfeatures2-container", {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".addfeatures2-container",
+                start: "top 80%",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+        gsap.fromTo(".addfeatures3-container", {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".addfeatures3-container",
+                start: "top 80%",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+        gsap.fromTo(".addfeatures4-container", {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".addfeatures4-container",
+                start: "top 80%",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+        gsap.fromTo(".addfeatures5-container", {
+            opacity: 0,
+            y: 100,
+        }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".addfeatures5-container",
+                start: "top 80%",
+                end: "bottom top",
+                toggleActions: "play none none reverse",
+            }
+        })
+    }, { scope: sectionRef })
 
     return(
         <>
@@ -124,6 +179,7 @@ export default function AddFeatures() {
                         <div className="add-text-upper add-phone-text">VARIETY</div>
                         <div className="add-text-bottom add-phone-text">FEATURES</div>
                         <img className="add-phone-image" src="/assets/addphone.png" alt="Phone Image"/>
+                        <img className="m-add-phone-image" src="/assets/m-addphone.png" alt="Phone Image"/>
                     </div>
                 </div>
             </section>

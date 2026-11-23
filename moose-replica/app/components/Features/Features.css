@@ -430,6 +430,49 @@
         height: 8vw;
     }
 
+    .item1-text-container {
+        padding-top: min(5vh, 10vw);
+    }
+
+    .item1-line{
+        height: min(26.136vh, 46.464vw);
+        width: min(33.555vh, 59.653vw);
+        top: 7%;
+    }
+
+    .item1-p1{
+        left: 2.5%;
+        top: 8%;
+        transform: translate(150%, 150%);
+    }
+    .item1-p2{
+        left: 45%;
+        top: 2%;
+        translate: -50% 0;
+        transform: translateY(160%);
+    }
+    .item1-p3{
+        right: 2%;
+        top: 5%;
+        transform: translate(-150%, 150%);
+    }
+    .item1-p4{
+        bottom: -10%;
+        left: 2.5%;
+        transform: translate(150%, -150%);
+    }
+    .item1-p5{
+        bottom: -15%;
+        left: 45%;
+        translate: -50% 0;
+        transform: translateY(-150%);
+    }
+    .item1-p6{
+        bottom: -7%;
+        right: 2%;
+        transform: translate(-150%, -150%);
+    }
+
     .item2-image-container {
         height: min(23.4vh, 41.6vw);
         margin-top: 15vw;

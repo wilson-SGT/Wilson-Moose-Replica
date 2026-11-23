@@ -222,7 +222,7 @@
     border-radius: min(3.125vh, 5.556vw);
     transform: scale(.94);
     align-items: center;
-    transition: top 2s ease, width 2s ease;
+    transition: top 0.5s ease, width 0.5s ease;
 }
 
 @media (max-width: 767px) {
@@ -252,15 +252,21 @@
         width: min(50vh, 88.889vw);
         height: 10vw;
         justify-content: space-between;
+        transform: translateY(0) scale(1);
+        transform-origin: top center;
+        transition: transform 0.3s ease;
+    }
+    .navbar-container.menu-open {
+        transform: translateY(20%) scale(.95);
     }
 
     .mobile-main-menu {
         display: flex;
         flex-direction: column;
-        top: -4vw;
-        left: -4%;
-        width: 107.5%;
-        height: 39vh;
+        top: -5vw;
+        left: -5%;
+        width: 110%;
+        height: 39.5vh;
         box-sizing: border-box;
         opacity: 0;
         visibility: hidden;
@@ -268,8 +274,7 @@
         transform: translateY(-20vh) scaleX(1.35);
         clip-path: inset(0 0 100% 0 round 5vw);
         transform-origin: top center;
-        transition: opacity 350ms ease, transform 500ms cubic-bezier(.2, .8, .2, 1),
-            clip-path 500ms cubic-bezier(.2, .8, .2, 1), visibility 0s linear 500ms;
+        transition: opacity 0.5s ease, transform 0.5s ease,  clip-path 0.5s ease, visibility 0s linear 0.5s;
     }
     .mobile-main-menu.active {
         opacity: 1;
@@ -277,8 +282,7 @@
         pointer-events: auto;
         transform: translateY(0) scaleX(1);
         clip-path: inset(0 0 0 0 round 5vw);
-        transition: opacity 350ms ease, transform 500ms cubic-bezier(.2, .8, .2, 1),
-            clip-path 500ms cubic-bezier(.2, .8, .2, 1), visibility 0s;
+        transition: opacity 0.5s ease, transform 0.5s ease, clip-path 0.5s ease, visibility 0s;
     }
     .mobile-navigation-links-container {
         margin-top: 27.5vw;

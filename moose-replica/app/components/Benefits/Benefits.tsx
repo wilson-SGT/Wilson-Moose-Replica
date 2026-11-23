@@ -12,15 +12,13 @@ export default function Benefits() {
 
     useGSAP(() => {
         const cards = gsap.utils.toArray<HTMLElement>(".benefit-container", sectionRef.current)
-
-        // The final card is the natural end of the section, so it should scroll normally.
         cards.slice(0, -1).forEach((card) => {
             gsap.to(card, {
                 opacity: 0,
                 scale: 0.8,
                 scrollTrigger: {
                     trigger: card,
-                    start: "-40% top",
+                    start: "-20% top",
                     end: () => `+=${window.innerHeight * 0.7}`,
                     pin: true,
                     pinSpacing: false,

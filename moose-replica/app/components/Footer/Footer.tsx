@@ -10,7 +10,7 @@ export default function Benefits() {
                         <img className="footer-line" src="/assets/footer-line.png"/>
                         <div className="footer-text">
                             <span className="copyright-text">© 2025 Copyright - Moose Designed by SGT</span>
-                            <div className="footer-download-button">
+                            <div className="footer-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                 <span className="footer-download-text">Download Now</span>
                             </div>
                         </div>

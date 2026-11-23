@@ -285,7 +285,7 @@ export default function Features() {
                                 <div className="item4-text-container">
                                     <span className="item4-text">Get the app</span>
                                     <div className="item4-download">
-                                        <div className="item4-download-button">
+                                        <div className="item4-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                             <div className="item4-download-texts">
                                                 <span className="download-now-item4">
                                                     Download Now

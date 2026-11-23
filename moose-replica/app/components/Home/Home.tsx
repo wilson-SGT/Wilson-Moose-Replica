@@ -65,7 +65,7 @@ export default function Home() {
                                     </span>
                                 </div>
                                 <div className="left-download">
-                                    <div className="left-download-button">
+                                    <div className="left-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                         <div className="left-download-texts">
                                             <span className="download-now-text download-now-text-1">
                                                 Download Now
