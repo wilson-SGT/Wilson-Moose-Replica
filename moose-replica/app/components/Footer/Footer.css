@@ -48,6 +48,13 @@
     height: min(5.2vh, 2.9vw);
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.footer-download-button:hover{
+    transform: scale(0.9);
+}
+.footer-download-button:hover .roll-letter-inner{
+    transform: translateY(-100%);
 }
 
 @media (max-width: 767px) {

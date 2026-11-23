@@ -1,5 +1,6 @@
 "use client"
 import "./Navbar.css"
+import RollText from "../RollText/RollText"
 import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -54,23 +55,23 @@ export default function Navbar() {
                 <div className="navbar-links-container">
                     <a href="#" className={active === 1 ? "navbar-link link-1 active" : "navbar-link link-1"} onClick={() => setActive(1)}>
                         <span className="navbar-dot">•</span>
-                        <div className="navbar-link-text">Home</div>
+                        <div className="navbar-link-text"><RollText text="Home" /></div>
                     </a>
                     <a href="#about-us" className={active === 2 ? "navbar-link link-2 active" : "navbar-link link-2"} onClick={() => setActive(2)}>
                         <span className="navbar-dot">•</span>
-                        <div className="navbar-link-text">About Us</div>
+                        <div className="navbar-link-text"><RollText text="About Us" /></div>
                     </a>
                     <a href="#key-features" className={active === 3 ? "navbar-link link-3 active" : "navbar-link link-3"} onClick={() => setActive(3)}>
                         <span className="navbar-dot">•</span>
-                        <div className="navbar-link-text">Key Features</div>
+                        <div className="navbar-link-text"><RollText text="Key Features" /></div>
                     </a>
                     <a href="#faq" className={active === 4 ? "navbar-link link-4 active" : "navbar-link link-4"} onClick={() => setActive(4)}>
                         <span className="navbar-dot">•</span>
-                        <div className="navbar-link-text">FAQ</div>
+                        <div className="navbar-link-text"><RollText text="FAQ" /></div>
                     </a>
                 </div>
                 <div className="navbar-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
-                    <span className="navbar-download-text">Download Now</span>
+                    <RollText text="Download Now" />
                 </div>
 
                 <div className={mobile ? "mobile-menu-button active" : "mobile-menu-button"} onClick={() => setMobile(!mobile)}>

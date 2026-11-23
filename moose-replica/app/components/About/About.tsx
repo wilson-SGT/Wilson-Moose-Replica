@@ -1,5 +1,6 @@
 "use client"
 import "./About.css"
+import RollText from "../RollText/RollText"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -97,7 +98,7 @@ export default function About() {
                             <div className="middle-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                 <div className="middle-download-texts">
                                     <span className="download-now-text-2">
-                                        Download Now
+                                        <RollText text="Download Now" />
                                     </span>
                                 </div>
                                 <div className="middle-arrow-container">

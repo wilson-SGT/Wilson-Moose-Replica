@@ -1,0 +1,37 @@
+/* the one-line window, the copy below it is hidden */
+.roll-text {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.roll-letter {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* this is what slides up on hover */
+.roll-letter-inner {
+    display: block;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.4s ease;
+}
+
+.roll-letter-text {
+    display: block;
+}
+
+/* the duplicate waiting under the letter */
+.roll-letter-copy {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .roll-letter-inner {
+        transition: none;
+    }
+}

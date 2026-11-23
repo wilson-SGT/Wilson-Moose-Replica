@@ -1,5 +1,6 @@
 "use client"
 import "./Footer.css"
+import RollText from "../RollText/RollText"
 
 export default function Benefits() {
     return(
@@ -11,7 +12,7 @@ export default function Benefits() {
                         <div className="footer-text">
                             <span className="copyright-text">© 2025 Copyright - Moose Designed by SGT</span>
                             <div className="footer-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
-                                <span className="footer-download-text">Download Now</span>
+                                <span className="footer-download-text"><RollText text="Download Now" /></span>
                             </div>
                         </div>
                     </div>

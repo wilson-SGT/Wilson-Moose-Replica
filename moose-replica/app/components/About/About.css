@@ -124,6 +124,7 @@
     align-items: center;
     height: min(7.4vh, 4.2vw);
     width: min(31.9vh, 17.9vw);
+    transition: transform 0.3s ease-in-out;
 }
 .middle-download-texts{
     display: flex;
@@ -144,6 +145,16 @@
 }
 .middle-arrow-icon{
     width: min(2.5vh, 1.4vw);
+    transition: transform 0.3s ease-in-out;
+}
+.middle-download-button:hover .roll-letter-inner{
+    transform: translateY(-100%);
+}
+.middle-download-button:hover .middle-arrow-icon{
+    transform: rotate(45deg);
+}
+.middle-download-button:hover{
+    transform: scale(0.9);
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,6 @@
 "use client"
 import "./Features.css"
+import RollText from "../RollText/RollText"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
@@ -186,7 +187,7 @@ export default function Features() {
                 toggleActions: "play reverse play reverse",
             }
         })
-        gsap.fromTo(".item4-download-button", {
+        gsap.fromTo(".item4-download", {
             opacity: 0,
             y: 50,
         }, {
@@ -288,7 +289,7 @@ export default function Features() {
                                         <div className="item4-download-button" onClick={() => window.open("https://play.google.com/store/apps/details?id=com.moose_social&hl=id", "_blank")}>
                                             <div className="item4-download-texts">
                                                 <span className="download-now-item4">
-                                                    Download Now
+                                                    <RollText text="Download Now" />
                                                 </span>
                                             </div>
                                         </div>

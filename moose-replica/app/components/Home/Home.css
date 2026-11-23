@@ -61,10 +61,11 @@
     align-items: center;
     height: min(7.4vh, 4.2vw);
     width: min(31.9vh, 17.9vw);
+    transition: transform 0.3s ease-in-out;
 }
 .download-now-text {
     font-weight: 500;
-    font-size: min(2.7vh, 1.5vw);
+    font-size: min(2.7vh, 1.3vw);
     margin-right: min(2.5vh, 1.4vw);
 }
 .left-arrow-container{
@@ -78,6 +79,16 @@
 }
 .left-arrow-icon{
     width: min(2.5vh, 1.4vw);
+    transition: transform 0.3s ease-in-out;
+}
+.left-download-button:hover .roll-letter-inner{
+    transform: translateY(-100%);
+}
+.left-download-button:hover .left-arrow-icon{
+    transform: rotate(45deg);
+}
+.left-download-button:hover{
+    transform: scale(0.9);
 }
 
 .image-container{

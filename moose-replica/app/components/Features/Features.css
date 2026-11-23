@@ -250,7 +250,7 @@
     display: flex;
     flex-direction: column;
     gap: min(0.5vh, 0.3vw);
-    width: min(115.6vh, 65vw);
+    width: min(110vh, 55vw);
 }
 .item3-text{
     font-size: min(3vh, 1.7vw);
@@ -321,10 +321,18 @@
     align-items: center;
     height: min(5.3vh, 3vw);
     width: min(21.3vh, 12vw);
+    transition: transform 0.3s ease-in-out;
 }
 .download-now-item4 {
     font-weight: 500;
     font-size: min(2.1vh, 1.2vw);
+}
+.item4-download-button:hover .roll-letter-inner{
+    transform: translateY(-100%);
+}
+
+.item4-download-button:hover{
+    transform: scale(0.9);
 }
 
 .m-background-features1, .m-background-features2, .m-background-features4 {
