@@ -44,76 +44,48 @@ export default function AddFeatures() {
                 stagger: 0.1,
             })
 
-        gsap.fromTo(".addfeatures1-container", {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".addfeatures1-container",
-                start: "top 80%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
+        const featureCards = gsap.utils.toArray<HTMLElement>(".addfeatures-container", sectionRef.current)
+        const featureList = sectionRef.current?.querySelector(".addfeatures-containers")
+        const media = gsap.matchMedia()
+
+        media.add("(max-width: 768px)", () => {
+            featureCards.forEach((card) => {
+                gsap.fromTo(card, {
+                    opacity: 0,
+                    y: 100,
+                }, {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.5,
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        end: "bottom top",
+                        toggleActions: "play none none reverse",
+                    }
+                })
+            })
         })
-        gsap.fromTo(".addfeatures2-container", {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".addfeatures2-container",
-                start: "top 80%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
+
+        media.add("(min-width: 767px)", () => {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: featureList,
+                    start: "top bottom",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse",
+                }
+            }).fromTo(featureCards, {
+                opacity: 0,
+                y: 75,
+            }, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.1,
+            })
         })
-        gsap.fromTo(".addfeatures3-container", {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".addfeatures3-container",
-                start: "top 80%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
-        })
-        gsap.fromTo(".addfeatures4-container", {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".addfeatures4-container",
-                start: "top 80%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
-        })
-        gsap.fromTo(".addfeatures5-container", {
-            opacity: 0,
-            y: 100,
-        }, {
-            opacity: 1,
-            y: 0,
-            duration: 0.5,
-            scrollTrigger: {
-                trigger: ".addfeatures5-container",
-                start: "top 80%",
-                end: "bottom top",
-                toggleActions: "play none none reverse",
-            }
-        })
+
+        return () => media.revert()
     }, { scope: sectionRef })
 
     return(
