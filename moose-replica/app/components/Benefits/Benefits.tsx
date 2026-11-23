@@ -8,27 +8,32 @@ import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 export default function Benefits() {
-    useGSAP(()=>{
-        const cards = gsap.utils.toArray(".benefit-container");
+    const sectionRef = useRef<HTMLElement>(null)
 
-        cards.forEach((card, index) => {
+    useGSAP(() => {
+        const cards = gsap.utils.toArray<HTMLElement>(".benefit-container", sectionRef.current)
+
+        // The final card is the natural end of the section, so it should scroll normally.
+        cards.slice(0, -1).forEach((card) => {
             gsap.to(card, {
-                opacity: index === cards.length - 1 ? 1 : 0,
-                scale: index === cards.length - 1 ? 1 : 0.8,
+                opacity: 0,
+                scale: 0.8,
                 scrollTrigger: {
                     trigger: card,
                     start: "-40% top",
-                    end: "+=70%",
+                    end: () => `+=${window.innerHeight * 0.7}`,
                     pin: true,
                     pinSpacing: false,
                     scrub: true,
+                    invalidateOnRefresh: true,
+                    anticipatePin: 1,
                 }
             });
         });
-    })
+    }, { scope: sectionRef })
     return(
         <>
-            <section className="section section5">
+            <section ref={sectionRef} className="section section5">
                 <div className="content-container5">
                     <div className="text-container5">
                         <div className="ben-label">

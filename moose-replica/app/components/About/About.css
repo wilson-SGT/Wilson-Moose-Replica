@@ -125,6 +125,9 @@
     height: min(7.4vh, 4.2vw);
     width: min(31.9vh, 17.9vw);
 }
+.middle-download-texts{
+    display: flex;
+}
 .download-now-text-2 {
     font-weight: 500;
     font-size: min(2.5vh, 1.4vw);
@@ -141,4 +144,57 @@
 }
 .middle-arrow-icon{
     width: min(2.5vh, 1.4vw);
+}
+
+@media (max-width: 767px) {
+    .inner-container {
+        display: none;
+    }
+    .text-container2{
+        width: 100%;
+        margin-top: min(12.5vh, 25vw);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    .title-text{
+        font-size: min(5.555vh, 8.333vw);
+        font-weight: 700;
+        line-height: 1.28;
+        margin-block: min(8.64vh, 18.7vw) min(5.083vh, 11vw);
+    }
+    .sub-text{
+        font-size: min(2.963vh, 4.444vw);
+        padding-top: 0;
+        white-space: wrap;
+        gap: min(3.6vh, 2vw);
+        width: 70vw;
+    }
+
+    .middle-download-button{
+        margin-top: min(6vh, 12vw);
+        height: min(7.031vh, 12.5vw);
+        width: min(31.562vh, 56.111vw);
+    }
+    .middle-download-texts{
+        display: flex;
+    }
+    .download-now-text-2 {
+        font-weight: 600;
+        font-size: min(2.5vh, 4.444vw);
+        margin-right: min(2vh, 4vw);
+    }
+    .middle-arrow-container{
+        width: min(7.031vh, 12.5vw);
+        height: min(7.031vh, 12.5vw);
+    }
+    .middle-arrow-icon{
+        width: min(2.344vh, 4.167vw);
+    }
+    .sec2-lines{
+        display: none;
+    }
 }

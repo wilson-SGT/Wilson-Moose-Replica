@@ -227,6 +227,7 @@ export default function Features() {
                     <div className="features-container">
                         <div className="features-1">
                             <img src="/assets/BackgroundCard1.png" alt="Background Card" className="background-features1"/>
+                            <img src="/assets/m-backgroundcard1.png" alt="Background Card" className="m-background-features1"/>
                             <div className="item1-container">
                                 <div className="item1-image-container">
                                     <img className="item1-line" src="/assets/item1-line.png" alt="" />
@@ -248,6 +249,7 @@ export default function Features() {
                         </div>
                         <div className="features-2">
                             <img src="/assets/BackgroundCard2.png" alt="Background Card" className="background-features2"/>
+                            <img src="/assets/m-backgroundcard2.png" alt="Background Card" className="m-background-features2"/>
                             <div className="item2-container">
                                 <div className="item2-text-container">
                                     <span className="item2-text">Be Yourself, Without Pressure</span>
@@ -275,6 +277,7 @@ export default function Features() {
                         </div>
                         <div className="features-4">
                             <img src="/assets/BackgroundCard4.png" alt="Background Card" className="background-features4"/>
+                            <img src="/assets/m-backgroundcard3.png" alt="Background Card" className="m-background-features4"/>
                             <div className="item4-container">
                                 <div className="item4-image-container">
                                     <img className="item4-image" src="/assets/item4.png"/>

@@ -22,6 +22,17 @@ export default function Home() {
                 scrub: true,
             },
         })
+        gsap.fromTo(".m-bottom-image-container", {
+            yPercent: 0
+        }, {
+            yPercent: -50,
+            scrollTrigger: {
+                trigger: section,
+                start: "27.5% center",
+                end: "bottom top",
+                scrub: true,
+            },
+        })
 
         const xto = gsap.quickTo(".image-phone", "x", { duration: 0.6, ease: "power3" })
         const yto = gsap.quickTo(".image-phone", "y", { duration: 0.6, ease: "power3" })
@@ -76,7 +87,7 @@ export default function Home() {
                                 <div className="right-text">
                                     <span>Discover the </span>
                                     <br/>
-                                    <span>Social Media App <br className="mobile-right-break"/> That</span>
+                                    <span>Social Media App <br className="mobile-right-break"/>That </span>
                                     <br className="desktop-right-break"/>
                                     <span>Values Authenticity</span>
                                 </div>
@@ -118,6 +129,50 @@ export default function Home() {
                                     </div>
                                     <div className="list-item">
                                         <p className="list-item-text">Authentic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="m-bottom-container">
+                            <div className="m-bottom-image-container">
+                                <img className="m-phone-image" src="/assets/phone-sec1.png" alt="Phone Image"/>
+                            </div>
+                            <div className="m-green-container">
+                                <img src="/assets/m-green-container-bg.png" alt="Green Background" className="m-green-background"/>
+                                <div className="m-text-container">
+                                    <div className="m-slide-animation">
+                                        <h1 className="m-slide-animation-text">
+                                            <span>MOOSE SOCIAL MEDIA • </span>
+                                            <span>MOOSE SOCIAL MEDIA • </span>
+                                        </h1>
+                                    </div>
+                                    <div className="m-line-divider">
+                                        <img src="/assets/line-divider.png" alt="Line Divider" className="m-line-divider"/>
+                                    </div>
+                                    <div className="m-description-text">
+                                        Connect with Real People and Share Genuine Moments Without Filters or Editing Tools.
+                                    </div>
+                                    <div className="m-list-container">
+                                        <div className="m-list-item">
+                                            <div className="m-list-dot"></div>
+                                            <p className="m-list-item-text">Real</p>
+                                        </div>
+                                        <div className="m-list-item">
+                                            <div className="m-list-dot"></div>
+                                            <p className="m-list-item-text">Unfiltered</p>
+                                        </div>
+                                        <div className="m-list-item">
+                                            <div className="m-list-dot"></div>
+                                            <p className="m-list-item-text">Proven</p>
+                                        </div>
+                                        <div className="m-list-item">
+                                            <div className="m-list-dot"></div>
+                                            <p className="m-list-item-text">Genuine</p>
+                                        </div>
+                                        <div className="m-list-item">
+                                            <div className="m-list-dot"></div>
+                                            <p className="m-list-item-text">Authentic</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

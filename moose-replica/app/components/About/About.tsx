@@ -89,9 +89,9 @@ export default function About() {
                             <span className="title-mini-text">authenticity.</span>
                         </div>
                         <div className="sub-text">
-                            <div className="line-left"/>
+                            <div className="line-left sec2-lines"/>
                             <span className="middle-sub-text">Feel at ease with a social space you can trust</span>
-                            <div className="line-right2"/>
+                            <div className="line-right2 sec2-lines"/>
                         </div>
                         <div className="middle-download">
                             <div className="middle-download-button">

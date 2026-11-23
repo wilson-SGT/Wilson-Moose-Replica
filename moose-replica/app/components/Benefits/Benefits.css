@@ -56,10 +56,10 @@
     width: min(123.5vh, 69.4vw);
     gap: min(6.172vh, 3.472vw);
     height: fit-content;
-    padding-bottom: 80vh;
 }
 .benefit-container{
     position: relative;
+    z-index: 1;
     padding: min(6.172vh, 3.472vw) 2vw;
     gap: min(6.172vh, 3.472vw);
     display: flex;
@@ -67,6 +67,9 @@
     align-items: center;
     justify-content: center;
 }
+.benefit-container:nth-child(2){ z-index: 2; }
+.benefit-container:nth-child(3){ z-index: 3; }
+.benefit-container:nth-child(4){ z-index: 4; }
 .section5-card-bg{
     position: absolute;
     inset: 0;
@@ -136,4 +139,16 @@
 .benefits-point-text{
     font-size: min(2.469vh, 1.389vw);
     line-height: 1.1;
+}
+.benefits-3-container{
+    z-index: 1;
+}
+.benefits-3-container{
+    z-index: 2;
+}
+.benefits-3-container{
+    z-index: 3;
+}
+.benefits-3-container{
+    z-index: 4;
 }
