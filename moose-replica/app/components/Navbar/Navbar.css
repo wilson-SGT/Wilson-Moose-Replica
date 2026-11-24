@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     position: sticky;
-    will-change: opacity;
     padding-top: min(6.2vh, 3.5vw);
     width: 100%;
     z-index: 99;

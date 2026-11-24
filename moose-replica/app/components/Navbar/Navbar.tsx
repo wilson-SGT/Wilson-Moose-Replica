@@ -18,8 +18,11 @@ export default function Navbar() {
         const navbar = navbarRef.current;
         if (!navbar) return;
 
+        const navbarContent = navbar.querySelector<HTMLElement>(".navbar-container");
+        if (!navbarContent) return;
+
         let hidden = window.scrollY > 80;
-        gsap.set(navbar, { opacity: hidden ? 0 : 1 });
+        gsap.set(navbarContent, { opacity: hidden ? 0 : 1 });
 
         ScrollTrigger.create({
             start: 0,
@@ -28,7 +31,7 @@ export default function Navbar() {
                 if (shouldHide === hidden) return;
 
                 hidden = shouldHide;
-                gsap.to(navbar, {
+                gsap.to(navbarContent, {
                     opacity: hidden ? 0 : 1,
                     duration: 0.5,
                     ease: "power2.out",
