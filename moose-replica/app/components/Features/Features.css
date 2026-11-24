@@ -322,6 +322,7 @@
     height: min(5.3vh, 3vw);
     width: min(21.3vh, 12vw);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 .download-now-item4 {
     font-weight: 500;

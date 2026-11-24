@@ -90,6 +90,7 @@
 }
 .google-play-image{
     width: 9vw;
+    cursor: pointer;
 }
 
 .cta-image-container{
@@ -208,6 +209,7 @@
     .m-google-play-image{
         display: flex;
         width: min(27.056vh, 48.1vw);
+        cursor: pointer;
     }
 
     .cta-image-container{

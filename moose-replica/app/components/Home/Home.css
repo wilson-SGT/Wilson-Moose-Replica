@@ -62,6 +62,7 @@
     height: min(7.4vh, 4.2vw);
     width: min(31.9vh, 17.9vw);
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 .download-now-text {
     font-weight: 500;
