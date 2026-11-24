@@ -18,7 +18,7 @@ export default function Benefits() {
                 scale: 0.8,
                 scrollTrigger: {
                     trigger: card,
-                    start: "-20% top",
+                    start: "-25% top",
                     end: () => `+=${window.innerHeight * 0.7}`,
                     pin: true,
                     pinSpacing: false,
